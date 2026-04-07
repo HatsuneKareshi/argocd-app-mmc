@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: beepboopBF_application
+  name: beepboopbf_application
   namespace: argocd
 spec:
   project: default
@@ -12,7 +12,7 @@ spec:
     path: dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: beepboopBF_namespace
+    namespace: beepboopbf_namespace
 
   syncPolicy:
     syncOptions:
